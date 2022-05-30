@@ -1,0 +1,61 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	double c, f;
+	cout<<"Ingrese temperatura en Celsius: ";cin>>c;
+	f=c*9/5+32;
+	cout<<"La conversion resulta: "<<f<<" F";
+}
+/*
+using namespace std;
+
+int main(){
+	int t,horas,r1, min, r2, seg, r3;
+	cout<<"Ingrese en segundos: ";cin>>t;
+	horas=t/3600;
+	r1=t%3600;
+	min=r1/60;
+	r2=r1%60;
+	seg=r2/60;
+	r3=r2%60;
+	
+	cout<<"horas: "<<horas<<" minutos: "<<min<<" segundos: "<<r3;
+	
+}
+*/
+/*
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main(){
+	int num,nrandom, diferencia, diferencia2;
+	srand(time(0));
+	nrandom=1+(rand()%100);
+	
+	cout<<"Estoy pensando en un numero entre 1 y 100"<<endl;
+	cout<<"Puedes adivinar cual es?"<<endl;
+	cout<<"Ingrese un numero: ";
+	cin>>num;
+	if(num==nrandom){
+		cout<<"FELICITACIONES"<<endl;
+		cout<<"Adivinaste el numero"<<endl;
+		cout<<"El numero fue: "<<nrandom;
+	}else{
+		diferencia=num-nrandom;
+		if (diferencia<0){
+			diferencia2=diferencia*-1;
+			cout<<"Pense en: "<<nrandom;
+			cout<<"\nLa diferencia es: "<<diferencia2;
+		}else{
+			cout<<"Pense en: "<<nrandom;
+			cout<<"\nLa diferencia es: "<<diferencia;
+		}
+	}
+			
+}
+*/
